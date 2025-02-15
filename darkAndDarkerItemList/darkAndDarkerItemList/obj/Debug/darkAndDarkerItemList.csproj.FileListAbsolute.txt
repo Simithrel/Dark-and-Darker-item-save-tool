@@ -1,0 +1,7 @@
+D:\Assignments\personalProjects\darkAndDarkerItemList\darkAndDarkerItemList\bin\Debug\darkAndDarkerItemList.exe.config
+D:\Assignments\personalProjects\darkAndDarkerItemList\darkAndDarkerItemList\bin\Debug\darkAndDarkerItemList.exe
+D:\Assignments\personalProjects\darkAndDarkerItemList\darkAndDarkerItemList\bin\Debug\darkAndDarkerItemList.pdb
+D:\Assignments\personalProjects\darkAndDarkerItemList\darkAndDarkerItemList\obj\Debug\darkAndDarkerItemList.csproj.AssemblyReference.cache
+D:\Assignments\personalProjects\darkAndDarkerItemList\darkAndDarkerItemList\obj\Debug\darkAndDarkerItemList.csproj.CoreCompileInputs.cache
+D:\Assignments\personalProjects\darkAndDarkerItemList\darkAndDarkerItemList\obj\Debug\darkAndDarkerItemList.exe
+D:\Assignments\personalProjects\darkAndDarkerItemList\darkAndDarkerItemList\obj\Debug\darkAndDarkerItemList.pdb
