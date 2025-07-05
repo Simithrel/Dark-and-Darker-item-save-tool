@@ -1,5 +1,5 @@
 trigger:
-  - main  # or your actual branch name
+  - main
 
 pool:
   vmImage: 'windows-latest'
