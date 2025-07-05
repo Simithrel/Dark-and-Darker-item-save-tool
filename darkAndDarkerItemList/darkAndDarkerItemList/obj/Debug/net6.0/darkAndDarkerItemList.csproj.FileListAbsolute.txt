@@ -1,0 +1,5 @@
+D:\Assignments\SDEV1070\Dark-and-Darker-item-save-tool\darkAndDarkerItemList\darkAndDarkerItemList\obj\Debug\net6.0\darkAndDarkerItemList.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assignments\SDEV1070\Dark-and-Darker-item-save-tool\darkAndDarkerItemList\darkAndDarkerItemList\obj\Debug\net6.0\darkAndDarkerItemList.AssemblyInfoInputs.cache
+D:\Assignments\SDEV1070\Dark-and-Darker-item-save-tool\darkAndDarkerItemList\darkAndDarkerItemList\obj\Debug\net6.0\darkAndDarkerItemList.AssemblyInfo.cs
+D:\Assignments\SDEV1070\Dark-and-Darker-item-save-tool\darkAndDarkerItemList\darkAndDarkerItemList\obj\Debug\net6.0\darkAndDarkerItemList.csproj.CoreCompileInputs.cache
+D:\Assignments\SDEV1070\Dark-and-Darker-item-save-tool\darkAndDarkerItemList\darkAndDarkerItemList\obj\Debug\net6.0\darkAndDarkerItemList.sourcelink.json

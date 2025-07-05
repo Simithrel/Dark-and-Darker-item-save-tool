@@ -1,5 +1,5 @@
 trigger:
-  - main  # Change this if your main branch is named differently
+  - main  # or your actual branch name
 
 pool:
   vmImage: 'windows-latest'
@@ -7,23 +7,23 @@ pool:
 variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  solution: '**/*.sln' 
+  solution: '**/*.sln'
 
 steps:
   - task: NuGetToolInstaller@1
     displayName: 'Install NuGet'
 
   - task: NuGetCommand@2
+    displayName: 'Restore NuGet packages'
     inputs:
       restoreSolution: '$(solution)'
-    displayName: 'Restore NuGet packages'
 
   - task: VSBuild@1
+    displayName: 'Build solution with MSBuild'
     inputs:
       solution: '$(solution)'
       platform: '$(buildPlatform)'
       configuration: '$(buildConfiguration)'
-    displayName: 'Build solution with MSBuild'
 
   - script: |
       echo Build output path:
@@ -31,8 +31,8 @@ steps:
     displayName: 'Show Output Folder'
 
   - task: PublishBuildArtifacts@1
+    displayName: 'Publish Build Artifacts'
     inputs:
       PathtoPublish: '$(Build.SourcesDirectory)\bin\$(buildConfiguration)'
       ArtifactName: 'drop'
       publishLocation: 'Container'
-    displayName: 'Publish Build Artifacts'
