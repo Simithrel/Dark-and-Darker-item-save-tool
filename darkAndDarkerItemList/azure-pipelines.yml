@@ -1,0 +1,38 @@
+trigger:
+  - main  # Change this if your main branch is named differently
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  solution: '**/*.sln' 
+
+steps:
+  - task: NuGetToolInstaller@1
+    displayName: 'Install NuGet'
+
+  - task: NuGetCommand@2
+    inputs:
+      restoreSolution: '$(solution)'
+    displayName: 'Restore NuGet packages'
+
+  - task: VSBuild@1
+    inputs:
+      solution: '$(solution)'
+      platform: '$(buildPlatform)'
+      configuration: '$(buildConfiguration)'
+    displayName: 'Build solution with MSBuild'
+
+  - script: |
+      echo Build output path:
+      echo bin\$(buildConfiguration)\
+    displayName: 'Show Output Folder'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.SourcesDirectory)\bin\$(buildConfiguration)'
+      ArtifactName: 'drop'
+      publishLocation: 'Container'
+    displayName: 'Publish Build Artifacts'
