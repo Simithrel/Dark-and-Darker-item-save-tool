@@ -27,3 +27,4 @@ steps:
       configuration: '$(buildConfiguration)'
 
   - script: echo Build done.
+    displayName: 'Notify build done'
