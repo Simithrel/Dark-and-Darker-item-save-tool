@@ -10,15 +10,6 @@ variables:
   solution: '**/*.sln'
 
 steps:
-  - task: NuGetToolInstaller@1
-
-  - task: NuGetCommand@2
-    displayName: 'Restore NuGet packages'
-    inputs:
-      command: restore
-      restoreSolution: '$(solution)'
-      feedsToUse: 'select'
-
   - task: VSBuild@1
     displayName: 'Build solution'
     inputs:
